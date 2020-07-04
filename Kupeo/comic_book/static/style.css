@@ -77,6 +77,10 @@ body{
   height: 20px;
 }
 
+.Info:hover, .Log:hover, .Forum:hover{
+  color: #e1dd44;
+}
+
 .Latest_Pages{
   border-radius: 5px;
   width: 300px;
