@@ -1,0 +1,195 @@
+body{
+  background-color: #adadad;
+  overflow: hidden;
+}
+
+@font-face {
+    font-family: Lol; /* Гарнитура шрифта */
+    src: url(fonts/lol.ttf); /* Путь к файлу со шрифтом */
+}
+
+.Header{
+  position: fixed;
+  height:  60px;
+  width: 100%;
+  border: 0px solid black;
+  background-color: #c8c8c8;
+}
+
+
+.Block{
+  width: 1500px;
+  margin: 0 auto;
+}
+
+
+.Kupeo{
+  z-index: 1;
+  font-size: 40px;
+  left: 15px;
+  top: 6px;
+  position: relative;
+  font-family: Lol;
+}
+
+.Frame{
+  left: 5px;
+  z-index: 0;
+  width: 157px;
+  height: 51px;
+  border: 0px solid black;
+  background-color: #e1dd44;
+  position: relative;
+  top: -55px;
+  border-radius: 5px;
+}
+
+.Sliders{
+  align-items: center;
+  display: flex;
+  font-family: Lol;
+  float: right;
+  position: relative;
+  top: 30px;
+  right: 20px;
+}
+
+.Info, .Log{
+  position: relative;
+  right: 20px;
+}
+
+.Info{
+  right: 40px;
+}
+
+.Name{
+  position: relative;
+  left: 14px;
+}
+
+.Info, .Log, .Forum{
+  color: black;
+  z-index: 10;
+  text-decoration: none;
+  position: relative;
+  top: -91px;
+  height: 20px;
+}
+
+.Latest_Pages{
+  border-radius: 5px;
+  width: 300px;
+  position: relative;
+  z-index: 100000000;
+  background-color: #c8c8c8;
+  height: 80%;
+  top: 100px;
+}
+
+.Page{
+  border-radius: 5px;
+  width: 1100px;
+  position: relative;
+  float: right;
+  z-index: 1000000;
+  background-color: #c8c8c8;
+  height: 80%;
+  top: 100px;
+}
+
+.l_p{
+  position: relative;
+  top: 10px;
+  font-family: Lol;
+  margin: 0 auto;
+  width: 120px;
+  height: 20px;
+}
+
+.Block_latest{
+  position: relative;
+  top: 18px;
+  float: left;
+  width: 260px;
+  left: 20px;
+  border-radius: 5px;
+  background-color: rgb(180, 180, 180);
+  height: 88%;
+  z-index: 100;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.pg{
+  height: 25px;
+  width: 260px;
+}
+
+.post_page{
+  position: relative;
+  margin: 0 auto;
+  width: 1000px;
+  top: 50px;
+  height: 74%;
+  border-radius: 5px;
+  padding: 10px;
+  overflow-x: auto;
+  font-family: Lol;
+  background-color: rgb(180, 180, 180);
+}
+
+.Text_post{
+  position: relative;
+}
+
+.title_post{
+  position: relative;
+  font-family: Lol;
+  float: left;
+  background-color: rgb(180, 180, 180);
+  padding: 10px;
+  border-radius: 5px;
+  top: 25px;
+  left: 40px;
+  margin: 0 auto;
+  width: 1000px;
+  height: 20px;
+}
+
+a{
+  outline: none;
+}
+
+.Latest_href{
+  position: relative;
+  top: 10px;
+  left: 34px;
+  text-decoration: none;
+  font-family: Lol;
+  color: black;
+}
+
+.Latest_href:hover{
+  color: #e1dd44;
+}
+
+@media screen and (max-width: 1600px) {
+
+  .Block{
+    width: 1200px;
+  }
+
+  .Page{
+    width: 800px;
+  }
+
+  .post_page{
+    width: 700px;
+  }
+
+  .title_post{
+    width: 700px;
+  }
+
+}

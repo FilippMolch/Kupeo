@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="shortcut icon" href="{% static 'jpg.ico' %}">
+  </head>
+    <title>Kupeo</title>
+  <body>
+    <style media="screen">
+    *{
+       height: 100%;
+       margin: 0;
+       padding: 0;
+     }
+    </style>
+      <div class="Header">
+        <div class="Name">
+        <p class="Kupeo">Kupeo</p>
+        <div class="Frame"></div>
+      </div>
+
+      <div class="Sliders">
+        <a href="#" class="Info">Info</a>
+        <a href="#" class="Log">Log</a>
+        <a href="#" class="Forum">Forum</a>
+      </div>
+
+    </div>
+    <div class="Block">
+      <div class="Page">
+        <p class="title_post">
+
+        </p>
+        <div class="post_page">
+          <p class="Text_post">
+
+          </p>
+        </div>
+      </div>
+      <div class="Latest_Pages">
+        <p class="l_p">Latest Pages</p>
+        <div class="Block_latest">
+          {% for p in post %}
+            <a class="Latest_href" href="#"><p class="pg">{{ p.cr_date }}</p></a>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="bl_2">
+      </div>
+    </div>
+  </body>
+</html>
